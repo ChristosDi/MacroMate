@@ -3,7 +3,8 @@
     {
       "name": "Book a Taxi",
       "items": [
-        { "title": "", "taxiMacro": "", "comboMemo": "" },
+        { "title": "BOOK A TAXI MACRO", "taxiMacro": "Dear XXXX,\n\nThank you for contacting us today,\n\nI am sorry if you are having problems creating a taxi reservation. Unfortunately, for privacy reasons, we are not able to make reservations on our customers' behalf.\n\nPlease, feel free to book your taxi through our website: https://www.booking.com/taxi/index.en-gb.html\n\n1- Select Single or return trip.\n2- Introduce your desired pick-up and drop-off locations.\n3- Select the dates for the trip (for the outbound trip, please select the date according to the arrival date of your flight if your pick-up is at the airport).\n\nFor the return trip, please choose the time that you would like to be picked up from your accommodation in order to arrive at your preferred time at the airport. No flight numbers are involved in return trips.\n\n4- Choose the number of passengers.\n\n5- You will have to select your desired type of vehicle based on the number of passengers and the amount of luggage that you will be carrying. You can find more information regarding the car capacity in that section.\n\nYou will be able to add more details or special requests in the Additional Comment section at the bottom of the page.\n\nIf you do have any problems with your reservation, please do not hesitate to contact us. If you want to make any changes once your trip has been created, follow the next steps.\n\nYou can make amendments by yourself as long as the cancellation policy does not apply!\n\nJust visit our website https://taxi.booking.com and follow these instructions:\n\n- Go to My Booking\n- Enter the email address on the booking and the booking ID (you can find it in your confirmation email)\n- Manage my booking\n- 'Change Route' button - Amend the details and verify availability - If possible, confirm it.\n\nThis is to ensure that our system will find an available taxi supplier for you for the new time requested.\n\nIf you still have any issues regarding updating your reservation, please get back in touch with me and I will try to assist you further."
+, "comboMemo": "//CS requested us to book a taxi//advised cannot book on the CS's behalf//advised to self book//provided instructions//DC" },
         { "title": "", "taxiMacro": "", "comboMemo": "" },
         { "title": "", "taxiMacro": "", "comboMemo": "" },
         { "title": "", "taxiMacro": "", "comboMemo": "" }
@@ -12,7 +13,7 @@
     {
       "name": "Child Seat",
       "items": [
-        { "title": "", "seatMacro": "", "comboMemo": "" },
+        { "title": "CS message for Seat confirming Age", "seatMacro": "Dear XXXXX,\n\nI hope this message finds you well. The supplier for your upcoming ride has requested information regarding the addition of a child seat. To ensure a smooth and safe journey, could you please confirm whether you require a child seat for this ride?\n\nIf yes, kindly provide the age of the child so that we can make the necessary arrangements. It's crucial to act promptly, as failing to confirm this detail may result in the supplier not including a child seat in the booking.\n\nFeel free to contact us at your earliest convenience to update this information. We appreciate your cooperation in ensuring a secure and comfortable travel experience.", "comboMemo": "// SP requested payment for a Child seat// XXXX asked CS to confirm the seat request //DC" },
         { "title": "", "seatMacro": "", "comboMemo": "" },
         { "title": "", "seatMacro": "", "comboMemo": "" },
         { "title": "", "seatMacro": "", "comboMemo": "" }
@@ -21,7 +22,7 @@
     {
       "name": "Incomplete Journey",
       "items": [
-        { "title": "", "journeyMacro": "", "comboMemo": "" },
+        { "title": "Defend Incomplete Journey", "journeyMacro": "Dear xxxx,\n\nThank you for your email and we apologise profusely that your pick-up has not gone as expected.\n\nI’ve had a look into your booking and I can see that the drop off location requested was xxxxxxxx.\n\nAs the driver who met with you, dropped you off at this location, when the booking was originally created, we are unable to offer a reimbursement of the cost of this transfer, this is because the driver has followed the instructions shown in the booking correctly.\n\nI apologise for any inconvenience caused, and if there is anything else that I can help you with then please let me know.", "comboMemo": "//defended complaint as the CS was taken to the right loc as per evidence//DC" },
         { "title": "", "journeyMacro": "", "comboMemo": "" },
         { "title": "", "journeyMacro": "", "comboMemo": "" },
         { "title": "", "journeyMacro": "", "comboMemo": "" }
@@ -39,7 +40,7 @@
     {
       "name": "Finance",
       "items": [
-        { "title": "", "financeMacro": "", "comboMemo": "" },
+        { "title": "Raised with Finance ", "financeMacro": "Dear XXXX,\n\nThank you for your email and please accept our apologies for the inconvenience.\n\nI have been in touch with the Accounts Department and please be aware that in order to check the refund deeply, we require to provide the following information:\n\nSWIFT code,\nIBAN (or BSB and account number),\nPassenger’s name,\n\nThis information needs to be on the document issued by the bank. Unfortunately, we are not able to accept the screenshots from your online banking neither SWIFT code confirmation from google.\n\nSome customers take photos of their bank statement (all of the information is usually specified on the first page) this should be more than enough and that will help us to process the refund and cover the difference in cost you had to pay.\n\nI would also recommend contacting your bank's customer service for more information.\n\nI am looking forward to hearing from you.", "comboMemo": "//CS chasing funds for booking not refunded in more than 7 working days  after having contacted the card provider//asked for appropriate details to raise it with finance//DC" },
         { "title": "", "financeMacro": "", "comboMemo": "" },
         { "title": "", "financeMacro": "", "comboMemo": "" },
         { "title": "", "financeMacro": "", "comboMemo": "" }
@@ -48,7 +49,7 @@
     {
       "name": "Flights",
       "items": [
-        { "title": "", "flightMacro": "", "comboMemo": "" },
+        { "title": "Flight Number Comment Section Supplier", "flightMacro": "Dear Partner,\n\nHope you are doing well.\n\nThis is regarding XXIDXXX.\n\nThe customer provided the flight number XXXXX in advance through the comment section.\n\nKindly ensure the driver will be tracking the arrival time accordingly as it could not be updated in our system due to a system's error.\n\nAs you have been contacted in advance and now you are in knowledge of this, failing to track the flight number will lead to the penalization of this booking.\n\nThank you in advance.", "comboMemo": "// CS requested to amend flight number as has already tried but the system will not recognize it /// tried to amend as well with no successes //XXXXXX contacted the SP and verified that they have received the FN/ provided Full Flight number in the comment section//advised CS for the system error and assured the Supplier will be informed //provided the SPs number //DC" },
         { "title": "", "flightMacro": "", "comboMemo": "" },
         { "title": "", "flightMacro": "", "comboMemo": "" },
         { "title": "", "flightMacro": "", "comboMemo": "" }
