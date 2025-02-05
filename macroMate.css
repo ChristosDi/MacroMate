@@ -1,76 +1,189 @@
+html,
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    background: #000;
+    /* Underlying black background */
+}
+
+/* Header container: holds the title and booking logo */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Booking logo container (you can adjust positioning if needed) */
+.booking-logo-container {
+    /* For example, keep it inline with the header */
+}
+
+/* Booking logo image styling */
+.booking-logo {
+    width: 100px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+/* Basic reset and refined futuristic typography */
+body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    overflow-x: hidden;
+    font-family: 'Orbitron', sans-serif;
+    color: #ddd;
+    background: transparent;
+    /* Three.js canvas will be our background */
 }
 
+/* Enhanced header with neon glow (applied to h1) */
 h1 {
     margin-top: 20px;
-    color: #333;
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    text-shadow:
+        0 0 8px #9b59b6,
+        0 0 12px #2ecc71,
+        0 0 16px #3498db;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #9b59b6, #2ecc71, #3498db);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
+/* Button container with neon border */
 .button-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 15px;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+    border: 1px solid rgba(0, 246, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 246, 255, 0.4);
 }
 
+/* Futuristic yet formal buttons */
 button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
     border: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    background: linear-gradient(145deg, #1c1c1c, #0d0d0d);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 246, 255, 0.4);
 }
 
+/* Refined glassmorphism display container with neon border */
 .display-container {
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     width: 80%;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(20, 20, 20, 0.5);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.3), 0 0 15px rgba(0, 246, 255, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 246, 255, 0.3);
+    position: relative;
+    z-index: 10;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
-.title {
-    font-size: 20px;
+/* Title inside display container */
+.display-container .title {
+    font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #333;
+    color: #cfd8dc;
+    text-shadow: 0 0 5px rgba(0, 246, 255, 0.5);
 }
 
-.content {
+/* Each macro block arranged in a column with gap */
+.display-container .content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Macro block: title on top and content row below */
+.macro-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Item title above the columns */
+.item-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #cfd8dc;
+    text-shadow: 0 0 5px rgba(0, 246, 255, 0.5);
+}
+
+/* Row for macro and memo columns with a gap */
+.item-content {
+    display: flex;
+    gap: 20px;
     align-items: flex-start;
 }
 
+/* Macro column on the left fills available space */
 .macro {
-    width: 60%;
-    padding: 10px;
-    border-right: 1px solid #ccc;
-    background-color: #e9ecef;
-    border-radius: 5px 0 0 5px;
+    flex: 1;
+    position: relative;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 246, 255, 0.4);
+    display: flex;
+    flex-direction: column;
 }
 
+/* Memo column on the right adjusts to its content */
 .memo {
-    width: 35%;
-    padding: 10px;
-    background-color: #f8f9fa;
-    border-radius: 0 5px 5px 0;
+    flex: 0 0 auto;
+    width: fit-content;
+    max-width: 40%;
+    position: relative;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5), 0 0 8px rgba(255, 0, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Copy button styles placed at the bottom right of each container */
+.copy-button {
+    align-self: flex-end;
+    margin-top: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #00f6ff;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.copy-button:hover {
+    color: #00d0e6;
+    text-shadow: 0 0 5px rgba(0, 246, 255, 0.5);
 }

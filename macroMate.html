@@ -5,28 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MacroMate</title>
+    <!-- Futuristic font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="macroMate.css">
 </head>
 
 <body>
-    <h1>MacroMate</h1>
-    <div class="button-container">
-        <button>Book a Taxi</button>
-        <button>Child Seat</button>
-        <button>Incomplete Journey</button>
-        <button>DNS</button>
-        <button>Finance</button>
-        <button>Flights</button>
-        <button>Free Taxi</button>
-        <button>Invoice</button>
-        <button>Location</button>
-        <button>Memos</button>
-        <button>Passenger Number</button>
-        <button>Proof Request</button>
-        <button>Rate</button>
-        <button>Zero Down</button>
+    <div class="header-container">
+        <h1>MacroMate</h1>
+        <div class="booking-logo-container">
+            <!-- Ensure you have the booking logo image at images/booking_logo.png -->
+            <img src="images/booking_logo.png" alt="Booking Logo" class="booking-logo">
+        </div>
     </div>
-
+    <!-- Button container will be populated dynamically -->
+    <div class="button-container"></div>
+    <!-- Display container for macro/memo content -->
     <div id="display" class="display-container">
         <div class="title">Title of the Object</div>
         <div class="content">
@@ -34,6 +28,9 @@
             <div class="memo">Object Memo Content</div>
         </div>
     </div>
+    <!-- Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Main JS file (unchanged) -->
     <script src="macroMate.js"></script>
 </body>
 
